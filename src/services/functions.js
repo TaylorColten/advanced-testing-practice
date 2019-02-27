@@ -33,5 +33,12 @@ return firstValue
 return theOnce
  */
 export function once(theFunc){
-  
+  let firstValue = null;
+  const theOnce = () => {
+    if ( firstValue === null) {
+      firstValue = theFun();
+      return firstValue;
+    }
+  }
+  return theOnce;
 }
