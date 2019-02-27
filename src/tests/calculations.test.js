@@ -13,7 +13,13 @@ describe("subtract", () => {
 });
 
 describe("multiply", () => {
-  it("should multiply 4 and 5 return 20", () => {
+  it("should multiply 4 by 5 return 20", () => {
     expect(multiply(4, 5)).toBe(20);
+  });
+});
+
+describe("divide", () => {
+  it("should divide 100 by 4 return 25", () => {
+    expect(divide(100, 4)).toBe(25);
   });
 });
