@@ -11,3 +11,9 @@ describe("subtract", () => {
     expect(subtract(5, 4)).toBe(1);
   });
 });
+
+describe("multiply", () => {
+  it("should multiply 4 and 5 return 20", () => {
+    expect(multiply(4, 5)).toBe(20);
+  });
+});
