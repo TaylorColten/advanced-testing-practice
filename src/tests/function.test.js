@@ -22,3 +22,10 @@ describe("after", () => {
 //create a test that uses once on add 
 //call the returned function with 4 and 5 to result in 9
 //all subsequent calls should result in 9 no matter what arguments are provided
+dsecribe("once", () => {
+  let myOnce = once(() => add(4,5));
+  console.log(myOnce());
+  console.log(myOnce());
+  myOnce();
+  myOnce();
+})
